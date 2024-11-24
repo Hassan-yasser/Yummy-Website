@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/yummy.css">
+    <title>Document</title>
+  </head>
+  <body class="bg-black">
+
+    <div class="parent_spinner ">
+      <i class="fa-solid fa-spinner loading"></i>
+    </div>
+    
+    <div class="sideNav position-fixed d-flex flex-row justify-content-between top-0 start-0 bottom-0">
+      <div class="top-0 start-0 bottom-0 d-flex flex-column justify-content-between py-3 bg-black asidehide">
+        <div class="links overflow-hidden text-light pt-3">
+          <a  class=""><li class="h6 mb-3 position-relative showEe showE1 Categories">Search</li></a>
+          <a  class=""><li class="h6 mb-3 position-relative showEe showE2 Categories">Categories</li></a>
+          <a  class=""><li class="h6 mb-3 position-relative showEe showE3 Categories">ingredient</li></a>
+          <a  class=""><li class="h6 mb-3 position-relative showEe showE4 Categories">Area</li></a>
+          <a  class="" href="#contact"><li class="h6 mb-3 position-relative showEe showE5 Categories">Contact Us</li></a>
+        </div>
+          <div class="text-start text-light pe-3 links mt-5 position-relative top-50 translate-middle-y"><i class="fa-brands fa-facebook pe-3"></i><i class="fa-brands fa-twitter pe-3"></i><i class="fa-brands fa-tiktok"></i>
+            <p class="m-0">Copyright Â© 2019 All Rights</p>
+            <p class="m-0">Reserved.</p>
+          </div>
+      </div>
+      <div class="d-flex flex-column py-3 justify-content-between asideApper text-center bg-light ">
+        <img src="IMGS/logo.png" class="w-75 mx-auto" alt="">
+        <i class="fa-solid fa-bars openAside fs-4 buttonSide"></i>
+        <i class="fa-solid fa-x closeAside fs-4 buttonSide"></i>
+        <div class="d-flex flex-column ">
+          <i class="fa-solid fa-globe mb-2 "></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row searchInputs pt-3">
+        <div class="form-floating mb-3 col-sm-12 col-lg-6">
+          <input type="text" class="form-control" id="SearchByname" placeholder="SearchByFirstLitter" oninput="searchByName()">
+          <label for="SearchByname">Search By Name</label>
+        </div>
+        <div class="form-floating col-sm-12 col-lg-6">
+          <input type="text" class="form-control" id="SearchByFirstLitter" placeholder="SearchByFirstLitter" oninput="searchByFirstLetters()">
+          <label for="SearchByFirstLitter">Search By First Litter</label>
+        </div>
+      </div>
+      <div class="row meals ps-5  g-3 pt-5" >
+dawdawdawdawdawdawdawdawdawda
+      </div>
+    </div>
+
+<div class="hidePage loadingData containerr mx-auto w-75 mb-5 py-5" id="contact">
+  <div class="row">
+    <div class="text-light text-center col-12 mb-2"><h1 class="editFonts">Contact Us</h1></div>
+    <div class="form-floating col-lg-6 col-sm-12 my-2">
+      <input class="editFonts text-light bg-black inputs py-3 rounded-2 text-center w-100" id="emailInput" placeholder="name@example.com" oninput="valid(this)" required="" type="email">
+      <p class="editFonts  text-danger mt-2 emailE">Email Must be Valid , Such as example@gmail.com</p>
+    </div>
+    <div class="form-floating col-lg-6 col-sm-12 my-2">
+      <input class="editFonts text-light bg-black inputs py-3 rounded-2 text-center w-100" id="nameInput" placeholder="Full name" oninput="valid(this)" required="">
+      <p class="editFonts text-danger mt-2 NameE">User Name Must be Valid , Such as example example</p></div><div class="form-floating col-lg-6 col-sm-12">
+      <input class="editFonts text-light bg-black inputs py-3 rounded-2 text-center w-100" id="PhoneInput" placeholder="PhoneNumber" oninput="valid(this)" required="">
+      <p class="editFonts text-danger mt-2 PhoneE">Phone Must be Valid , Such as 01096407359</p></div>
+    <div class="form-floating col-lg-6 col-sm-12 my-2">
+      <input class="editFonts text-light bg-black inputs py-3 rounded-2 text-center w-100" id="ageInput" placeholder="Enter Ur Age" type="number" oninput="validAge(this)" required="">
+      <p class="editFonts text-danger mt-2 ageE">Age Must be bigger than 15</p></div><div class="form-floating col-lg-6 col-sm-12">
+      <input class="editFonts text-light bg-black inputs py-3 rounded-2 text-center w-100" id="PassInput" placeholder="Enter Ur Password" oninput="valid(this)" required="" type="password">
+      <p class="editFonts text-danger mt-2 PassE">Password Must be at least 6 char or 6 nums or more</p></div>
+    <div class="form-floating col-lg-6 col-sm-12 my-2">
+      <input class="editFonts text-light bg-black inputs py-3 rounded-2 text-center w-100" id="RepassInput" placeholder="Re Enter Password" oninput="validRepass(this)" required="" type="password">
+      <p class="editFonts text-danger mt-2 RePassE">Repass Must Be Same Pass</p>
+    </div>
+    <div class="col-12 text-center">
+      <button class=" border-0 mt-3 px-4 py-2 rounded-pill submitbtn  bg-warning-subtle" >Sumbit</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <script src="./JS/jquery-3.7.1.js"></script>
+    <script src="./JS/yummy.js"></script>
+  </body>
+</html>
